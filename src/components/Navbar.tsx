@@ -1,10 +1,10 @@
 import React, {useState} from 'react'
-import logo from '../assets/admin_assets/logo.png'
-import profile_icon from '../assets/frontend_assets/profile_icon.png'
-import search_icon from '../assets/frontend_assets/search_icon.png'
-import cart_icon from '../assets/frontend_assets/cart_icon.png'
-import menu_icon from '../assets/frontend_assets/menu_icon.png'
-import dropdown_icon from '../assets/frontend_assets/dropdown_icon.png'
+import logo from '../assets/logo.png'
+import profile_icon from '../assets/profile_icon.png'
+import search_icon from '../assets/search_icon.png'
+import cart_icon from '../assets/cart_icon.png'
+import menu_icon from '../assets/menu_icon.png'
+import dropdown_icon from '../assets/dropdown_icon.png'
 import { Link, NavLink } from 'react-router-dom'
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <div className='flex justify-between items-center py-5 font-medium'>
-            <img src={logo} className="w-36" alt="" />
+            <Link to="/"><img src={logo} className="w-36" alt="" /></Link>
             <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
                 <NavLink to="/" className='flex flex-col items-center gap-1'>
                     <p>Home</p>
